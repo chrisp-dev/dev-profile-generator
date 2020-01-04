@@ -180,9 +180,9 @@ function generateHTML(data) {
             <h1>My name is ${data.name}!</h1>
             <h2>${data.hubdata.bio}</h2>
             <p class="links-nav">
-              <a href="#" class="nav-link">${data.hubdata.location}</a>
-              <a href="https://github.com/${data.github}" class="nav-link">GitHub</a>
-              <a href="https://linkedin.com/in/${data.linkedin}" class="nav-link">LinkedIn</a>
+              <a href="#" class="nav-link"><i class="fas fa-location-arrow"></i> ${data.hubdata.location}</a>
+              <a href="https://github.com/${data.github}" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="${data.linkedin}" class="nav-link"><i class="fa fa-wifi"></i> LinkedIn</a>
             </p>
           </div>
           <main class="container">
