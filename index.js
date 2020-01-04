@@ -63,7 +63,7 @@ async function init() {
         answers.hubdata = await gitData(answers.github);
         const html = generateHTML(answers);
 
-        await writeToFile("profile.html", html);
+        await writeToFile("index.html", html);
         console.log('init end');
     } catch (err) {
         console.log(err);
